@@ -24,8 +24,13 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <video autoplay muted loop class="hero-img">
-            <source src="./images/IMG_2374.MOV" type="video/mp4"></video>
+        <!-- Vidéo : préférence MP4 (H.264) puis WebM, puis MOV en dernier recours -->
+        <video autoplay muted loop playsinline class="hero-img" poster="./images/IMG_2374-poster.jpg">
+            <source src="./images/IMG_2374_720p.mp4" type="video/mp4">
+            <source src="./images/IMG_2374.webm" type="video/webm">
+            <source src="./images/IMG_2374.MOV" type="video/quicktime">
+            <!-- Votre navigateur ne supporte pas la balise vidéo. Vous pouvez <a href="./images/IMG_2374_720p.mp4">télécharger la vidéo</a>.-->
+        </video>
         <div class="hero-text">
             <h2 class="hero-subtitle">Producteur de canards gras en Périgord Noir</h2>
             <p>Un savoir‑faire familial transmis depuis plusieurs générations.</p>
