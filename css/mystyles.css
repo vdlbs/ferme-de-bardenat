@@ -1,0 +1,201 @@
+/* -------------------- IMPORTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@700&family=Open+Sans&display=swap');
+
+/* -------------------- VARIABLES -------------------- */
+:root {
+    --marron: #181112;
+    --blanc: #e2dcd5;
+    --rouge: #8C0A31;
+    --bleu: #1E2E69;
+}
+
+/* -------------------- BASE -------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanc);
+    color: var(--marron);
+    line-height: 1.6;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: var(--bleu);
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    background: var(--marron);
+    color: var(--blanc);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 3rem;
+    color: var(--blanc);
+    margin: 0.5rem 0;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--rouge);
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: var(--blanc);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.hero-subtitle {
+    font-family: "Brush Script MT", "Dancing Script", "Lucida Handwriting", cursive;
+    font-size: 2.8rem;
+    color: var(--marron);
+    margin: 0.5rem 0;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+/* -------------------- SECTIONS -------------------- */
+.section-light {
+    background: var(--blanc);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+}
+
+.section-dark {
+    background: #e0d8cf;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+}
+
+/* -------------------- PRODUITS -------------------- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    font-weight: bold;
+    border-left: 6px solid var(--rouge);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* -------------------- CONTACT -------------------- */
+.contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+    flex : 1 1 300px;
+}
+
+.contact a {
+    color: var(--bleu);
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: var(--rouge);
+}
+
+.address {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    background: var(--marron);
+    color: var(--blanc);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
