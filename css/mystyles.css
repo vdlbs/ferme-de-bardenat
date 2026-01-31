@@ -125,13 +125,6 @@ main {
 .hero-img {
   animation: fadeLoop 12s linear infinite;
 }
-
-@keyframes fadeLoop {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; }
-}
 /* -------------------- SECTIONS -------------------- */
 .section-light {
     background: var(--blanc);
