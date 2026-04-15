@@ -3,102 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Ferme de Bardenat - Famille DELBOS</title>
+  <title>La Ferme de Bardenat – Famille Delbos</title>
+
+  <!-- Typographies premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/mystyles.css" />
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header>
-    <h1>La Ferme de Bardenat</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#products">Produits</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">La Ferme de Bardenat</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
-      <video autoplay muted loop playsinline class="hero-img" poster="./images/poster.jpg">
-        <source src="./images/IMG_2374_Inversed_for_loop.webm" type="video/webm" />
-        <source src="./images/IMG_2374_Inversed_for_loop.mp4" type="video/mp4" />  
-      </video>
+
+    <video autoplay muted loop playsinline class="hero-video" poster="./images/poster.jpg">
+      <source src="./images/IMG_2374_Inversed_for_loop.webm" type="video/webm" />
+      <source src="./images/IMG_2374_Inversed_for_loop.mp4" type="video/mp4" />
+    </video>
+
     <div class="hero-text">
-      <h2 class="hero-subtitle">Producteur de canards gras en Périgord Noir</h2>
-      <p>Un savoir‑faire familial</p>
+      <h2>Producteur de canards gras en Périgord Noir</h2>
+      <p>Un savoir‑faire familial depuis trois générations</p>
+      <a href="#products" class="btn-primary">Découvrir nos produits</a>
     </div>
   </section>
 
   <main>
 
     <!-- À PROPOS -->
-    <section id="about" class="about section-light">
-      <h2>À propos</h2>
-      <p>
-        Située au cœur du Périgord Noir, la Ferme de Bardenat est spécialisée dans l’élevage,
-        le gavage et la production de canards gras. Nous perpétuons un savoir‑faire traditionnel
-        pour vous proposer des produits authentiques et de qualité, issus de notre propre élevage.
-      </p>
-      <p>
-        Nous proposons également des visites gratuites à la ferme pendant l'été, où vous pourrez découvrir
-        l’élevage des canards, le gavage traditionnel, et éventuellement visiter notre atelier de transformation.
-      </p>
+    <section id="about" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <p>
+          Située au cœur du Périgord Noir, la Ferme de Bardenat est spécialisée dans l’élevage,
+          le gavage et la production de canards gras. Nous perpétuons un savoir‑faire traditionnel
+          pour vous proposer des produits authentiques et de qualité, issus de notre propre élevage.
+        </p>
+        <p>
+          Nous proposons également des visites gratuites à la ferme pendant l'été, où vous pourrez découvrir
+          l’élevage des canards, le gavage traditionnel, et visiter notre atelier de transformation.
+        </p>
+      </div>
     </section>
 
     <!-- PRODUITS -->
-    <section id="products" class="products section-dark">
-      <h2>Nos produits</h2>
-      <div class="product-grid">
-        <div class="product-card">Foie gras de canard entier</div>
-        <div class="product-card">Magret de canard fumé et séché</div>
-        <div class="product-card">Confit de canard - 2 Cuisses</div>
-        <div class="product-card">Rillettes de canard</div>
-        <div class="product-card">Marquassines - Rillettes au foie gras</div>
-        <div class="product-card">Produits frais sur commandes</div>
+    <section id="products" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Nos produits</h2>
+
+        <div class="product-grid">
+          <div class="product-card">Foie gras de canard entier</div>
+          <div class="product-card">Magret de canard fumé et séché</div>
+          <div class="product-card">Confit de canard – 2 Cuisses</div>
+          <div class="product-card">Rillettes de canard</div>
+          <div class="product-card">Marquassines – Rillettes au foie gras</div>
+          <div class="product-card">Produits frais sur commande</div>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact section-light">
-      <div class="contact-container">
+    <section id="contact" class="section section-light">
+      <div class="container contact-container">
 
         <div class="contact-box">
-          <h2>Contact</h2>
+          <h2 class="section-title">Contact</h2>
           <p>Pour toute commande ou information :</p>
           <ul>
             <li>Email : <a href="mailto:fermedebardenat@yahoo.fr">fermedebardenat@yahoo.fr</a></li>
             <li>Téléphone : <a href="tel:0553296565">05 53 29 65 65</a></li>
             <li>Portable : <a href="tel:0684081989">06 84 08 19 89</a></li>
             <li>
-              Film documentaire de Jacques Crouzel (2010/2011) :
+              Film documentaire de Jacques Crouzel :
               <a href="https://youtu.be/kviTmqRi4gw?si=jm6fqkoAObJF0grm">voir sur YouTube</a>
             </li>
           </ul>
           <p class="address">
-            <a href="https://share.google/SVXRNPiQjX7piexTV" target="_blank" rel="noopener noreferrer">
-              La Ferme de Bardenat
-            </a><br />
-            <a href="https://maps.app.goo.gl/hYeggNYNyL75Lp6w7" target="_blank" rel="noopener noreferrer">
-              24620 Marquay - Bardenat.
-            </a></p>
+            <a href="https://share.google/SVXRNPiQjX7piexTV" target="_blank">La Ferme de Bardenat</a><br />
+            <a href="https://maps.app.goo.gl/hYeggNYNyL75Lp6w7" target="_blank">24620 Marquay – Bardenat</a>
+          </p>
         </div>
 
         <div class="contact-box">
-          <h2>Où nous trouver</h2>
+          <h2 class="section-title">Où nous trouver</h2>
           <ul>
             <li><strong>À la ferme :</strong> toute l’année sur rendez-vous</li>
-            <li><strong>Sur les marchés :</strong> Lundi : Les Eyzies <br> le Mercerdi : Sarlat <br> Le Jeudi : Meyrals <br> Le Samedi : Sarlat <br> Le Dimanche : Saint Cyprien</li>
-            <li><strong>En boutique :</strong> <p class="address"> <a href="https://maps.app.goo.gl/nn4sB3Zfpg8BEktL6" target="_blank" rel="noopener noreferrer"> Les Locos </a> </li>
+            <li><strong>Sur les marchés :</strong><br>
+              Lundi : Les Eyzies<br>
+              Mercredi : Sarlat<br>
+              Jeudi : Meyrals<br>
+              Samedi : Sarlat<br>
+              Dimanche : Saint Cyprien
+            </li>
+            <li><strong>En boutique :</strong>
+              <a href="https://maps.app.goo.gl/nn4sB3Zfpg8BEktL6" target="_blank">Les Locos</a>
+            </li>
           </ul>
         </div>
 
         <div class="contact-box">
-          <h2>Informations légales</h2>
+          <h2 class="section-title">Informations légales</h2>
           <ul>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Conditions générales de vente</a></li>
@@ -112,7 +131,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <p>&copy; 2026 La Ferme de Bardenat — Tous droits réservés.</p>
   </footer>
 
